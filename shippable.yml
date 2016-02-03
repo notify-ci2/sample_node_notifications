@@ -40,7 +40,7 @@ integrations:
       type: email
       recipients:
         - shiphitchcock1@gmail.com
-      on_start: never
+      on_start: always
       on_success: change
       on_failure: always
     - integrationName: ship-slack
@@ -48,7 +48,7 @@ integrations:
       recipients:
         - "#public-chnl"
         - pvt-channel
-      on_start: never
+      on_start: always
       on_success: change
       on_failure: always
     - integrationName: irc
@@ -56,6 +56,6 @@ integrations:
       recipients:
         - "chat.freenode.net#test-irc"
        # - "chat.freenode.net#channel2"
-      on_start: never
+      on_start: always
       on_success: change
       on_failure: always 
