@@ -26,7 +26,7 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi
+   # - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi
 
   #post_ci:
    # - docker push shippabledocker/shiphitchcock1_sample_node
