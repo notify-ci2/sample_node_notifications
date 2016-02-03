@@ -33,6 +33,11 @@ integrations:
   hub:
     - integrationName: ship-docker
       type: docker
-      branches:
-        only:
-          - master 
+    - integrationName: irc
+      type: irc
+      recipients:
+       - "chat.freenode.net#test-irc"
+# - "chat.freenode.net#channel2"
+      on_start: always
+      on_success: always
+
